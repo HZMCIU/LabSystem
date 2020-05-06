@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 8080
+zuul:
+  routes:
+    user-service:
+      path: /user-service/**
+      serviceId: user-manage
+    epxperiment-manage:
+      path: /experiment-service/**
+      serviceId: experiment-manage
+    swithcer:
+      path: /switcher-service/**
+      serviceId: switcher
+  host:
+    connect-timeout-millis: 30000 #HTTP连接超时要比Hystrix的大
+    socket-timeout-millis: 60000   #socket超时
+ribbon:
+  ReadTimeout: 25000
+  ConnectTimeout: 25000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+
+
+
+

@@ -1,0 +1,22 @@
+server:
+  port: 2222
+spring:
+  datasource:
+    master:
+      password: 123456
+      username: root
+      jdbc-url: jdbc:mysql://database-master:3306/experiment?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    slave:
+      password: 123456
+      username: root
+      jdbc-url: jdbc:mysql://database-slave:3306/experiment?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: experiment-manage
+mybatis:
+  type-aliases-package: com.hzmciu.experimentmanage.entity
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/

@@ -1,0 +1,24 @@
+.teacher-dashboard-trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.teacher-dashboard-trigger:hover {
+    color: #1890ff;
+}
+
+.teacher-dashboard-logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+}
+
+.teacher-dashboard-content{
+    margin: 24px 16px;
+    padding : 24 ;
+    background: #fff;
+    height:100%;
+}

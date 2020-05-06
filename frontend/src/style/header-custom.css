@@ -1,0 +1,39 @@
+.custom-trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.header {
+  padding: 0;
+  padding-right: 40px;
+  height: 65px;
+}
+
+.header .ant-menu{
+  background: transparent;
+  background-color: white;
+}
+
+.header .ant-menu .ant-menu-item :hover{
+  background-color: white;
+}
+.header_trigger{
+  background-color: white;
+}
+
+
+/* .ant-menu {
+        background: transparent;
+        color: @white;
+        .ant-menu-item {
+            &:hover {
+                color: @white;
+            }
+        }
+    } */
+/* .header__trigger {
+  color: @white;
+} */

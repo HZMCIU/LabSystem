@@ -1,0 +1,72 @@
+.interaction-status {
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.end {
+    color: #CCC;
+    border: 1px solid #CCC;
+}
+.processing {
+    color:#0BD;
+    border: 1px solid #0BD;
+}
+.not-started {
+    color:#FF6555;
+    border: 1px solid #FF6555;
+}
+.interaction-name {
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    width: 675px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.clear20 {
+    clear: both;
+    height: 20px;
+    line-height: 0px;
+    font-size: 0px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.interaction-row {
+    cursor: pointer;
+    padding:20px;
+    color: #666;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-top: 1px solid #e1e1e1;
+    background-color: #fff;
+}
+.interaction-row:last-child {
+    border-bottom: 1px solid #e1e1e1;
+}
+.interaction-row:first-child {
+    border-top-color: #fff;
+}
+.interaction-row[data-show=hide] {
+    display: none;
+}
+.interaction-row:hover + .interaction-row {
+    border-top-color: #0bd;
+}
+.interaction-row:hover {
+    border-color: #0BD;
+}
+.interaction-row:last-child:hover {
+    border-bottom-color: #0bd;    
+}
+.creater-name {
+    display: inline-block;
+    max-width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
